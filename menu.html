@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Exercícios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .topo {
+            background-color: white;
+            color: # 333;
+            padding: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .menu-pequeno {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .container {
+            padding: 30px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .menu-lista {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .menu-lista li {
+            margin: 10px 0;
+            font-size: 18px;
+            cursor: pointer;
+            color: darkblue
+        }
+        
+        .menu-lista li:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topo">
+
+        <div class="menu-pequeno">Menu exercicio</div>
+    </div>
+
+    <div class="container">
+        <h1>Menu Exercícios</h1>
+
+        <ul class="menu-lista">
+            <li>Currículo</li>
+            <li>Mural de cães</li>
+            <li>Cursos</li>
+            <li>Cadastro</li>
+        </ul>
+    </div>
+
+    <script>
+        const agora = new Date();
+        const data = agora.toLocaleDateString('pt-BR');
+        const hora = agora.toLocaleTimeString('pt-BR');
+        document.getElementById("dataHora").innerHTML = data + " - " + hora;
+    </script>
+
+</body>
+
+</html>
